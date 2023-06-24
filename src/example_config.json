@@ -15,6 +15,7 @@
   "logger": {
     "feedback": "CHANNEL_ID",
     "guilds": "CHANNEL_ID",
+    "vote": "CHANNEL_ID",
     "logs": {
       "id": "WEBHOOK_ID",
       "token": "WEBHOOK_TOKEN"
