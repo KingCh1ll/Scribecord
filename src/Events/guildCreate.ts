@@ -14,7 +14,7 @@ export default {
 
 		const Owner = await guild?.fetchOwner().catch(() => null) || null;
 		await getChannelByIdAndSend(bot.cluster, config.logger.guilds, {
-			content: `✨ Discovered [**\`${guild.name}\`**](https://discordlookup.com/guild/${guild.id}) (${formatNumber(guild.memberCount)}) by ${Owner?.user?.username}. Now in ${await serverCount(bot.cluster)} servers.`
+			content: `✨ Discovered **${guild.name}** \`${guild.id}\` (+${formatNumber(guild.memberCount)}) by \`@${Owner?.user?.username}\`. Now in ${await serverCount(bot.cluster)} servers.`
 		});
 
 		if (guild.systemChannel) {
@@ -25,7 +25,7 @@ export default {
 			await guild.systemChannel?.send({
 				embeds: [{
 					title: "Thanks for adding me!",
-					description: `${config.emojis.info} | **About Scribecord**\n> I'm a powerful Discord bot with the purpose to intergrate your socials to Discord.\n> If you want to setup/configure Scribecord, run </config:1031199564767707178>.\n\n${config.emojis.award} | **Credits**\n> [Ch1llDev / KingCh1ll](https://ch1ll.dev/) • Creator and developer.\n> [Luna](https://lunish.nl/) • Many UI Ideas / Beta Tester.\n> [Danu](https://discord.gg/mm5QWaCWF5) • Made black and white icons.\n\n${config.emojis.question} | **Join Our Community!**\n> Feel free to join our [Discord server](https://discord.gg/PPtzT8Mu3h).`,
+					description: `${config.emojis.info} | **About Scribecord**\n> Scribecord is an easy-to-use text-to-speech, speech-to-text, and recording bot.\n> If you want to setup/configure Scribecord, run </config:1031199564767707178>.\n\n${config.emojis.award} | **Credits**\n> [Ch1llDev / KingCh1ll](https://ch1ll.dev/) • Creator and developer.\n> [Luna](https://lunish.nl/) • Many UI Ideas.\n> [Danu](https://discord.gg/mm5QWaCWF5) • Made black and white icons.\n\n${config.emojis.question} | **Join Our Community!**\n> Feel free to join our [Discord server](https://discord.gg/PPtzT8Mu3h).`,
 					thumbnail: { url: bot.user?.displayAvatarURL() as string },
 					image: { url: "https://www.scribecord.tk/images/banner.gif" },
 					color: Colors.Blue,

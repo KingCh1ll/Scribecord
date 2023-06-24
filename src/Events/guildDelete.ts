@@ -13,7 +13,7 @@ export default {
 
 		const Owner = await guild?.fetchOwner().catch(() => null) ?? null;
 		await getChannelByIdAndSend(bot.cluster, config.logger.guilds, {
-			content: `🍂 Lost [**\`${guild.name}\`**](https://discordlookup.com/guild/${guild.id}) (${formatNumber(guild.memberCount)}) by ${Owner?.user?.username}. Now in ${await serverCount(bot.cluster)} servers.`
+			content: `🍂 Lost **${guild.name}** \`${guild.id}\` (-${formatNumber(guild.memberCount)}) by \`@${Owner?.user?.username}\`. Now in ${await serverCount(bot.cluster)} servers.`
 		});
 	}
 };
