@@ -3,11 +3,11 @@ import { joinVoiceChannel, createAudioPlayer, createAudioResource } from "@disco
 import getAudioDurationInSeconds from "get-audio-duration";
 import { unlink } from "fs";
 
-import cmd from "../../../Structures/command";
-import config from "../../../config.json";
-import { CustomClient } from "../../../Structures/types";
-import { textSpeech } from "../../../Modules/vtt";
-import { voiceState, voiceStateTime } from "../../../app";
+import cmd from "../../Structures/command";
+import config from "../../config.json";
+import { CustomClient } from "../../Structures/types";
+import { textSpeech } from "../../Modules/vtt";
+import { voiceState, voiceStateTime } from "../../app";
 
 async function execute(bot: CustomClient, interaction: CommandInteraction) {
 	if (!interaction.guild?.members.me?.permissionsIn(interaction.channel?.id ?? "").has(["ViewChannel", "SendMessages"])) return interaction.editReply(`${config.emojis.alert} • I"m not able to send messages in this channel.`);

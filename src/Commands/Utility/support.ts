@@ -1,10 +1,10 @@
 import { Colors, Client, CommandInteraction } from "discord.js";
 
-import cmd from "../../../Structures/command";
-import config from "../../../config.json";
-import { GuildTypes } from "../../../Models/guild";
-import { CustomClient } from "../../../Structures/types";
-import LanguageHandler from "../../../Languages/Handler";
+import cmd from "../../Structures/command";
+import config from "../../config.json";
+import { GuildTypes } from "../../Models/guild";
+import { CustomClient } from "../../Structures/types";
+import LanguageHandler from "../../Languages/Handler";
 
 export default new cmd(async (bot: CustomClient, interaction: CommandInteraction, data: { guild: GuildTypes }) => {
     const i18n = new LanguageHandler({ language: data.guild.language ?? "en-US", command: "support" });

@@ -66,12 +66,12 @@ new Promise(async resolve => {
 	}
 
 	let slashCommands: Slash[] = [];
-	fs.readdirSync(path.resolve(__dirname, "./Commands/Slash")).map((cat: string) => {
-		const category = require(`./Commands/Slash/${cat}/index.js`)?.default;
+	fs.readdirSync(path.resolve(__dirname, "./Commands")).map((cat: string) => {
+		const category = require(`./Commands/${cat}/index.js`)?.default;
 		categories.set(cat, category);
 
-		fs.readdirSync(path.resolve(__dirname, `./Commands/Slash/${cat}/`)).filter(f => f.endsWith(".js") && !(f.startsWith("index"))).map(cmd => {
-			let command: Command = require(`./Commands/Slash/${cat}/${cmd}`).default;
+		fs.readdirSync(path.resolve(__dirname, `./Commands/${cat}/`)).filter(f => f.endsWith(".js") && !(f.startsWith("index"))).map(cmd => {
+			let command: Command = require(`./Commands/${cat}/${cmd}`).default;
 			let commandName: string = cmd.split(".")[0];
 			if (!command) return;
 

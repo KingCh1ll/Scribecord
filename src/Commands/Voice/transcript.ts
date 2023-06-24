@@ -5,12 +5,12 @@ import fs from "fs";
 import prism from "prism-media";
 import path from "path";
 
-import cmd from "../../../Structures/command";
-import LanguageHandler from "../../../Languages/Handler";
-import { GuildTypes } from "../../../Models/guild";
-import { CustomClient } from "../../../Structures/types";
-import config from "../../../config.json";
-import { speechText } from "../../../Modules/vtt";
+import cmd from "../../Structures/command";
+import LanguageHandler from "../../Languages/Handler";
+import { GuildTypes } from "../../Models/guild";
+import { CustomClient } from "../../Structures/types";
+import config from "../../config.json";
+import { speechText } from "../../Modules/vtt";
 
 const tempDirectory = path.join(__dirname, "../", "../", "../", "../", "Temp/VTT");
 const playing = new Collection<string, VoiceConnection>();

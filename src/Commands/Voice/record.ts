@@ -6,12 +6,12 @@ import prism from "prism-media";
 
 import path from "path";
 
-import cmd from "../../../Structures/command";
-import LanguageHandler from "../../../Languages/Handler";
-import { GuildTypes } from "../../../Models/guild";
-import { CustomClient } from "../../../Structures/types";
-import { wait } from "../../../app";
-import config from "../../../config.json";
+import cmd from "../../Structures/command";
+import LanguageHandler from "../../Languages/Handler";
+import { GuildTypes } from "../../Models/guild";
+import { CustomClient } from "../../Structures/types";
+import { wait } from "../../app";
+import config from "../../config.json";
 
 const tempDirectory = path.join(__dirname, "../", "../", "../", "../", "Temp/Record");
 async function execute(bot: CustomClient, interaction: CommandInteraction, data: { guild: GuildTypes }) {

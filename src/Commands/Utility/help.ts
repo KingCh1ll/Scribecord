@@ -2,12 +2,12 @@ import { CommandInteraction, Colors, PermissionsBitField, EmbedData, BaseGuildTe
 import { inspect } from "util";
 import os from "os";
 
-import { convertTime, formatNumber, getChannelByIdAndSend, serverCount, userCount } from "../../../Modules/functions";
-import cmd from "../../../Structures/command";
-import LanguageHandler from "../../../Languages/Handler";
-import config from "../../../config.json";
-import { GuildTypes } from "../../../Models/guild";
-import { CustomClient } from "../../../Structures/types";
+import { convertTime, formatNumber, getChannelByIdAndSend, serverCount, userCount } from "../../Modules/functions";
+import cmd from "../../Structures/command";
+import LanguageHandler from "../../Languages/Handler";
+import config from "../../config.json";
+import { GuildTypes } from "../../Models/guild";
+import { CustomClient } from "../../Structures/types";
 
 const cooldowns: { id: string, sent: number }[] = [];
 
