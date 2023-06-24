@@ -1,0 +1,118 @@
+{
+  "owner": "571811686617710592",
+  "token": "TOKEN_FROM_DEV_PORTAL_GOES_HERE",
+  "devToken": "TESTBOT_TOKEN_GOES_HERE_FROM_DEV_PORTAL",
+  "bot": {
+    "id": "1097656100066693150",
+    "support": "https://discord.gg/PPtzT8Mu3h",
+    "invite": "https://canary.discord.com/api/oauth2/authorize?client_id=1097656100066693150&permissions=274881334272&scope=bot%20applications.commands"
+  },
+  "manager": {
+    "totalClusters": 1,
+    "totalShards": 1,
+    "port": 3000
+  },
+  "logger": {
+    "feedback": "CHANNEL_ID",
+    "guilds": "CHANNEL_ID",
+    "logs": {
+      "id": "WEBHOOK_ID",
+      "token": "WEBHOOK_TOKEN"
+    },
+    "error": {
+      "id": "WEBHOOK_ID",
+      "token": "WEBHOOK_TOKEN"
+    }
+  },
+  "apis": {
+    "statcord": "statcord.com-KEYGOESHERE"
+  },
+  "botlists": {},
+  "emojis": {
+    "socials": {
+      "youtube": "<:youtube:1029547776960368641>",
+      "twitter": "<:twitter:1031213202836561992>",
+      "instagram": "<:instagram:1035353027504250902>",
+      "reddit": "<:reddit:954115515180261406>",
+      "twitch": "<:twitch:1039696702581514240>",
+      "spotify": "<:spotify:1071268883522138232>"
+    },
+    "success": "<:check:947986875182891039>",
+    "error": "<:cross:947986875069628436>",
+    "warning": "<:warning:953769677534945360>",
+    "stop": "<:stop:1098029213392588800>",
+    "trash": "<:trash:1077431487386877972>",
+    "dot": "<:dot:1021546885766447146>",
+    "toggleOn": "<:toggle_on:1067193163703386242>",
+    "toggleOff": "<:toggle_off:1067193164731011112>",
+    "music": "<:music:947988551805575189>",
+    "servers": "<:servers:933608928959406081>",
+    "player": "<:player:947989678928306226>",
+    "clock": "<:clock:948707964091527268>",
+    "memory": "<:memory:933732415153782854>",
+    "rocket": "<:rocket:960265502666678323>",
+    "stats": "<:stats:947990408657518652>",
+    "config": "<:config:947990880806142032>",
+    "tada": "<a:tada:819934065414242344>",
+    "search": "<:search:939232222672748604>",
+    "slash": "<:slash:948004325999931444>",
+    "star": "<:star:948013324216434718>",
+    "channel": "<:channel:948015879399038997>",
+    "coin": "<:coin:948362336736006144>",
+    "bank": "<:bank:950866065775288380>",
+    "join": "<:join:948363247931752528>",
+    "leave": "<:leave:950860359999295638>",
+    "plus": "<:plus:948364491479994448>",
+    "trophy": "<:trophy:948366724577763448>",
+    "award": "<:award:948367545839272036>",
+    "id": "<:id:948368103916597268>",
+    "mention": "<:mention:952668988020785222>",
+    "special": "<:special:948707650655379516>",
+    "loading": "<:loading:948707365815988276>",
+    "globe": "<:globe:950864917987205261>",
+    "owner": "<:owner:950869827193548870>",
+    "question": "<:question:952361944097128518>",
+    "play": "<:play:954117792360202330>",
+    "pause": "<:pause:954557102511235152>",
+    "music_stop": "<:music_stop:954557414282231838>",
+    "loop": "<:loop:954561440453378068>",
+    "volume": "<:volume:954118294762319942>",
+    "queue": "<:queue:954740209344462920>",
+    "circle": "<:circle:954791603770359888>",
+    "ticket": "<:ticket:955241708935864320>",
+    "bell": "<:bell:958549070698381373>",
+    "mail": "<:mail:958550146210201610>",
+    "wave": "<:wave:963895265289461781>",
+    "alert": "<:alert:958552000537169930>",
+    "ban": "<:ban:966075832265220167>",
+    "kick": "<:kick:966117892242427975>",
+    "timeout": "<:timeout:966116239346905100>",
+    "message": "<:message:966496523955339264>",
+    "link": "<:link:977759580484415488>",
+    "twitter": "<:twitter:977759580345995304>",
+    "image": "<:image:948004558884442142>",
+    "backpack": "<:backpack:989283182643920926>",
+    "folder": "<:folder:989315881337225266>",
+    "info": "<:info:989289834197684285>",
+    "edit": "<:edit:1003465902685159584>",
+    "paint": "<:paint:1037129816375304306>",
+    "game": "<:game:948029517417578576>",
+    "arrows": {
+      "up": "<:arrow_up:954930080436609055>",
+      "down": "<:arrow_down:954930093568974898>",
+      "left": "<:arrow_left:954706026475712564>",
+      "right": "<:arrow_right:954117792360202330>"
+    },
+    "numbers": {
+      "one": "<:number_one:1005500667898630256>",
+      "two": "<:number_two:1005500667122684005>",
+      "three": "<:number_three:1005500665939890307>",
+      "four": "<:number_four:1005500665293963296>",
+      "five": "<:number_five:1005500664396386354>",
+      "six": "<:number_six:1005500662928392223>",
+      "seven": "<:number_seven:1005500662236315870>",
+      "eight": "<:number_eight:1005500729437458442>",
+      "nine": "<:number_nine:1005500728430825622>"
+    }
+  }
+}
