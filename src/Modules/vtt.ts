@@ -2,12 +2,11 @@ import fs from "fs";
 import path from "path";
 import { Transform, Readable } from "stream";
 import wav from "wav";
-import { wait } from "../app";
 import { OpusEncoder } from "@discordjs/opus";
 
 /* -------------------------------------------------- MAIN (https://alphacephei.com/vosk/models) --------------------------------------------------*/
 const vosk = require("vosk");
-const model = new vosk.Model(path.join(__dirname, "../", "../", "/Models/model_aspire"));
+const model = new vosk.Model(path.join(__dirname, "../", "../", "/Models", "/model"));
 
 export class OpusDecodingStream extends Transform {
 	encoder: OpusEncoder;
